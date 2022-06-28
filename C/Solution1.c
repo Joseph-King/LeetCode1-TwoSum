@@ -1,4 +1,4 @@
-//Author: Joseph-King (AlwaysJoeKing)
+//Author: Joseph-King
 //Date: Jun 22, 2022
 
 #include <stdio.h>

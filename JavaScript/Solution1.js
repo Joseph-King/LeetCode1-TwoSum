@@ -1,8 +1,8 @@
-//Author: Joseph-King (AlwaysJoeKing)
+//Author: Joseph-King
 //Date: Jun 21, 2022
 
 //Returns indicies of array for values that add up to target
-function TwoSum(arr, target) {
+function twoSum(arr, target) {
 
     //first for loop to visit every index
     for(let i=0; i<arr.length; i++){
