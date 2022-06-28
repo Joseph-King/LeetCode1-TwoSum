@@ -2,7 +2,7 @@
 //Date: Jun 21, 2022
 
 //Returns indicies of array for values that add up to target
-function TwoSum(arr, target) {
+function twoSum(arr, target) {
 
     //set map
     let map = {};
@@ -42,6 +42,6 @@ var target2 = 6;
 var target3 = 6;
 
 //Run Test Cases
-console.log(TwoSum(arr1, target1));
-console.log(TwoSum(arr2, target2));
-console.log(TwoSum(arr3, target3));
+console.log(twoSum(arr1, target1));
+console.log(twoSum(arr2, target2));
+console.log(twoSum(arr3, target3));
