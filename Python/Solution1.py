@@ -2,7 +2,7 @@
 #Date: Jun 21, 2022
 
 #Returns indicies for array for values that add up to target
-def twoSum(arr, target):
+def two_sum(arr, target):
     #First for loop to visit every index
     for i in range(len(arr)):
         #Second loop to visit every index after i
@@ -25,6 +25,6 @@ target2 = 6
 target3 = 6
 
 #Run Test Cases
-print(twoSum(arr1, target1))
-print(twoSum(arr2, target2))
-print(twoSum(arr3, target3))
+print(two_sum(arr1, target1))
+print(two_sum(arr2, target2))
+print(two_sum(arr3, target3))
