@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 //Returns indices of values in array that's sum equals the target
-void TwoSum(int* arr, int target, const int SIZE){
+int* TwoSum(int* arr, int target, const int SIZE, int* test){
     //first loop to go through every index
     for(int i=0; i<SIZE; i++){
         //second loop to go through every index after i
@@ -14,12 +14,15 @@ void TwoSum(int* arr, int target, const int SIZE){
 
             //if sum = target, print array of indicies
             if(sum == target){
-                int result[2] = {i, j};
+                test[0] = i;
+                test[1] = j;
 
-                printf("%d %d\n", i, j);
+                return(test);
             }
         }
     }
+
+    return(test);
 }
 
 //Main function
@@ -40,9 +43,16 @@ int main() {
     int target3 = 6;
 
     //Results
-    TwoSum(arr1, target1, SIZE1);
-    TwoSum(arr2, target2, SIZE2);
-    TwoSum(arr3, target3, SIZE3);
+    int test[2];
+
+    int* result1 = TwoSum(arr1, target1, SIZE1, test);
+    printf("%d %d\n", result1[0], result1[1]);
+
+    int* result2 = TwoSum(arr2, target2, SIZE2, test);
+    printf("%d %d\n", result2[0], result2[1]);
+
+    int* result3 = TwoSum(arr3, target3, SIZE3, test);
+    printf("%d %d\n", result3[0], result3[1]);
 
     return 0;
 }
